@@ -615,17 +615,11 @@ input[type='checkbox'] {
 	letter-spacing: 1px;
 }
 
-
-
-
-
 .icons-container img {
 	width: 50px;
 	margin-right: 0.2rem;
 	margin-bottom: 0.75rem;
 }
-
-
 /********************/
 /*     Projects     */
 /********************/
@@ -705,13 +699,6 @@ input[type='checkbox'] {
 	transform: scale(1.15);
 }  */
 /* end of hover animation */
-
-
-
-
-
-
-
 
 /******************/
 /*     Footer     */
@@ -794,7 +781,29 @@ a:hover.back-to-top {
 	background-color: #0b36a8;
 }
 
-
+/* whatsapp container */
+.wasp{
+	height: 80px;
+	width:80px;
+	position: absolute;
+	right: 25px;
+	bottom:25px;
+	color:#258366;
+	position: fixed;
+	transition: all 400ms;
+	display: block;
+  
+  }
+  @media (min-width:768px){
+	.wasp{
+	  display: none;
+	}
+  }
+  .whatsapp_btn_container .wasp:hover{
+	transform: scale(1.2);
+  }
+  /* whatsapp container ends */
+  
 /***********************/
 /*     Extra Pages     */
 /***********************/
