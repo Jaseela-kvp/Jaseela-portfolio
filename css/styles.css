@@ -402,7 +402,7 @@ input[type='checkbox'] {
 	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
-	width: 100%;
+	width: 50%;
 	padding-right: 1rem;
 	padding-left: 1rem;
 	overflow-y: auto;
@@ -437,31 +437,24 @@ input[type='checkbox'] {
 .navbar .nav-item .nav-link.active {
 	color: #9c9ead;
 }
-
-
-.navbar .fa-stack {
-	width: 2em;
-	margin-right: 0.25rem;
-	font-size: 0.75rem;
+.navbar ul li{
+	position: relative;
+}
+.navbar ul li a::after{
+	content:'';
+	width: 0;
+	height:3px;
+	background:#0b36a8;
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	transition: 0.5s;
+}
+.navbar ul li a:hover::after{
+	width:70%;
 }
 
-.navbar .fa-stack-2x {
-	color: #0b36a8;
-	transition: all 0.2s ease;
-}
 
-.navbar .fa-stack-1x {
-	color: #ffffff;
-	transition: all 0.2s ease;
-}
-
-.navbar .fa-stack:hover .fa-stack-2x {
-	color: #ffffff;
-}
-
-.navbar .fa-stack:hover .fa-stack-1x {
-	color: #0b36a8;
-}
 
 .navbar .navbar-toggler {
 	padding: 0;
