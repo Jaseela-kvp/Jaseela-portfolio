@@ -786,7 +786,7 @@ a:hover.back-to-top {
 	height: 80px;
 	width:80px;
 	position: absolute;
-	right: 12px;
+	left: 12px;
 	bottom:25px;
 	color:#258366;
 	position: fixed;
