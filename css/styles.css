@@ -172,8 +172,8 @@ a:hover {
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #0b36a8;
-	background-color: #0b36a8;
+	border: 1px solid #424769;
+	background-color: #424769;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -184,7 +184,7 @@ a:hover {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #0b36a8; /* needs to stay here because of the color property of a tag */
+	color: #424769; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
@@ -444,7 +444,7 @@ input[type='checkbox'] {
 	content:'';
 	width: 0;
 	height:3px;
-	background:#0b36a8;
+	background:#424769;
 	position: absolute;
 	left: 0;
 	bottom: -6px;
@@ -532,7 +532,7 @@ input[type='checkbox'] {
 	content:'';
 	width:0;
 	height: 3px;
-	background: #0b36a8;
+	background: #424769;
 	position: absolute;
 	left:0;
 	bottom: -8px;
@@ -545,9 +545,10 @@ input[type='checkbox'] {
 .tab-contents ul li{
 	list-style: none;
 	margin: 10px 0;
+	color: white;
 }
 .tab-contents ul li span{
-	color:#0b36a8;
+	color:#424769;
 	font-size: 14px;
 }
 .tab-contents{
@@ -607,7 +608,7 @@ input[type='checkbox'] {
 .basic-2 .fas,
 .basic-2 .far {
 	margin-bottom: 1.75rem;
-	color: #0b36a8;
+	color: #424769;
 	font-size: 3.5rem;
 }
 
@@ -693,11 +694,7 @@ input[type='checkbox'] {
 	transition: all 0.2s;
 }
 
-/* .basic-4 .image-container:hover img {
-	-moz-transform: scale(1.15);
-	-webkit-transform: scale(1.15);
-	transform: scale(1.15);
-}  */
+
 /* end of hover animation */
 
 /******************/
@@ -778,29 +775,33 @@ a.back-to-top {
 }
 
 a:hover.back-to-top {
-	background-color: #0b36a8;
+	background-color: #424769;
 }
 
-/* whatsapp container */
-.wasp{
-	height: 80px;
-	width:80px;
-	position: absolute;
-	left: 12px;
-	bottom:25px;
-	color:#258366;
-	position: fixed;
-	transition: all 400ms;
-	display: block;
-  
-  }
+
   @media (min-width:768px){
 	.wasp{
 	  display: none;
 	}
   }
-  .whatsapp_btn_container .wasp:hover{
+.wasp{
+	position: fixed;
+	right: 12px;
+	z-index: 999;
+	bottom: 60px;
+	width:42px;
+	height: 42px;
+	background-color: #424769;
+	border: #424769;
+	display: block;
+	transition: all 400ms;
+	text-align: center;
+
+}
+ 
+   .wasp:hover{
 	transform: scale(1.2);
+	background-color: #424769;
   }
   /* whatsapp container ends */
   
