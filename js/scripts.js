@@ -7,13 +7,14 @@
     /* Navbar Scripts */
     // jQuery to collapse the navbar on scroll
     $(window).on('scroll load', function() {
-		if ($(".navbar").offset().top > 60) {
-			$(".fixed-top").addClass("top-nav-collapse");
-		} else {
-			$(".fixed-top").removeClass("top-nav-collapse");
-		}
+        if ($(".navbar").offset().top > 60) {
+            $(".fixed-top").addClass("top-nav-collapse"); // Adding class for scrolled state
+            $(".navbar").css("background-color", "#43766C"); // Changing background color
+        } else {
+            $(".fixed-top").removeClass("top-nav-collapse"); // Removing class for initial state
+            $(".navbar").css("background-color", "transparent"); // Reverting back to original background color
+        }
     });
-
     new WOW().init();
     
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
